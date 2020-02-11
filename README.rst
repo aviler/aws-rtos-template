@@ -1,9 +1,12 @@
-# :shell: aws-rtos-template
+*************************
+:shell: aws-rtos-template
+*************************
 
 Template where you can build Amazon Free-RTOS (https://github.com/aws/amazon-freertos) projects on top of it.
 
 
-## Usage
+Usage
+#####
 
 **Build**
 
@@ -28,15 +31,17 @@ src/
  - Where your application code goes.
 
 
-## TO DO
+TO DO
+#####
 
 - Your IoT project
 - Examples of mqtt/ble/other in separate branches
 
 
-## Notes
+Notes
+#####
 
 
-## Changelog
-
+Changelog
+#########
 
