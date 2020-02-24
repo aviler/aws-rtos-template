@@ -16,19 +16,27 @@ Follow the steps described here[doc link]
 
 Build and flash it into your esp32. It just outputs log messages every 500 miliseconds.
 
-**Directories**
 
-amazon-freertos/
- - git submodule that points to the amazon freertos repository with freertos kernel and amazon libraries.
+Directories
+###########
 
-amazon-freertos-config/
- - Current solution to have your own amazon services/iot/mqtt configuration overriding and outside amazon-freertos directory.
+config/
+ - Current solution to have your own amazon services/iot/mqtt configuration overriding and outside components/aws-rtos directory.
 
 components/
  - Where to add any other library that you need or built yourself.
 
+components/aws-rtos/
+ - Git submodule that points to the amazon freertos repository with freertos kernel and amazon libraries.
+
 src/
- - Where your application code goes.
+ - Where our application code goes.
+
+docs/
+ - Your project docs goes here.
+
+test/
+ - Your unit tests goes here.
 
 
 TO DO
