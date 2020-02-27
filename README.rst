@@ -45,5 +45,6 @@ Notes
 Changelog
 #########
 
- - 0.0.1 - First draft
+ - 0.0.3 - CMake hotfix
  - 0.0.2 - Directories restructuring
+ - 0.0.1 - First draft
