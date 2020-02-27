@@ -18,11 +18,11 @@ list(APPEND IDF_EXTRA_COMPONENT_DIRS ${EXTRA_COMPONENT_DIRS})
 # As of now there's no offical way to redefine config files outside of Amazon FreeRTOS source tree.
 # This is a temporary approach to inject an include path so that this takes precedence over the
 # config file directory inside Amazon FreeRTOS.
-include_directories(BEFORE amazon-freertos-configs)
+include_directories(BEFORE config)
 
 # Add amazon freertos as an subdirectory. AFR_BOARD tells which board to target.
 set(AFR_BOARD espressif.esp32_devkitc CACHE INTERNAL "")
-add_subdirectory(amazon-freertos)
+add_subdirectory(components/aws-rtos)
 
 # Link against the mqtt lib so that we can use it.
 target_link_libraries(aws-rtos-template PRIVATE AFR::mqtt)
